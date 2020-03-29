@@ -1,0 +1,6 @@
+<ul class="tab-bar-links">
+    <li><a [ngClass]="'tab-bar-link ' + (currentTab === 'default' ? 'tab-active':'')" href='#'
+            (click)="onTabSelect('default')">ABOUT ME</a></li>
+    <li><a [ngClass]="'tab-bar-link ' + (currentTab === 'about' ? 'tab-active':'')" href='#'
+            (click)="onTabSelect('about')">SUMMARY</a></li>
+</ul>

@@ -1,0 +1,58 @@
+
+button:hover {
+    line-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    white-space: normal;
+    text-align: left;
+    color: #F7ECC8;
+    text-decoration: none;
+    background-color: #4a90e2;
+    border-radius: 0%;
+    font-weight: 700;
+    font-family: Inconsolata;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    line-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    color: #F1C54E;
+    text-decoration: none;
+    white-space: normal;
+    text-align: left;
+    font-family: Inconsolata;
+    font-size: inherit;
+}
+
+.blinking {
+    visibility: hidden;
+}
+
+button:hover>.blinking {
+    font-weight: 700;
+    visibility: visible;
+    animation: blinking-text 1s infinite;
+}
+
+@keyframes blinking-text {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: transparent;
+    }
+
+    80% {
+        color: transparent;
+    }
+
+    100% {
+        color: white;
+    }
+}

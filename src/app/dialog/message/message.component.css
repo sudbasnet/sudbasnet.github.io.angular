@@ -1,0 +1,11 @@
+span{
+    word-break: break-word;
+    white-space: p;
+    display: inline;
+    font-family: Inconsolata;
+}
+
+.dialog-box {
+    padding-bottom: 20px;
+    color: #E85858;
+}

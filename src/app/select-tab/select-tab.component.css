@@ -1,0 +1,28 @@
+.tab-bar-links{
+    list-style: none;
+    display: flex;
+    height: 2em;
+    /* align-items: left; */
+}
+
+.tab-bar-links{
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.tab-bar-link {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-family: Inconsolata;
+    /* font-size: 18px; */
+    padding-right: 20px;
+}
+
+.tab-bar-link:hover{
+    color: #fafafa;
+}
+
+a.tab-active{
+    color: #fafafa;
+    text-decoration-line: underline ;
+}

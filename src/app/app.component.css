@@ -1,0 +1,8 @@
+.terminal-content{
+    display: grid;
+    grid-template-rows: 2em 1fr
+}
+
+.terminal-text{
+    padding: 5px;
+}

@@ -1,13 +1,45 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
   <meta charset="utf-8">
-  <title>Sudbasnet</title>
-  <base href="/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Inconsolata|Karla|Poppins:semibold"
+    rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="icon.png">
 </head>
+
 <body>
-  <app-root></app-root>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a class="nav-link active" href="/">01.Home</a></li>
+          <li><a class="nav-link" href="#">02.Resume</a></li>
+          <li><a class="nav-link disabled" href="/">03.Adventures</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="game">
+        <img class="pixi-game" src="assets/sbasnet.gif" alt="placeholder">
+      </div>
+      <div class="terminal">
+        <app-root></app-root>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li><a target="_blank" class="footer-link" href="https://github.com/sudbasnet">Github</a></li>
+        <li><a target="_blank" class="footer-link" href="https://www.linkedin.com/in/sudeepbasnet/">LinkedIn</a></li>
+      </ul>
+    </footer>
+  </div>
 </body>
+
 </html>
