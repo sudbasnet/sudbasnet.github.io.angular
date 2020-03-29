@@ -1,0 +1,10 @@
+<app-pixi class="game"></app-pixi>
+<div class="terminal">
+    <div class="terminal-content">
+        <app-select-tab [currentTab]="currentTab"></app-select-tab>
+        <div class="terminal-text">
+            <app-dialog *ngIf="currentTab === 'default'" [dialog]="dialog"></app-dialog>
+            <app-about *ngIf="currentTab === 'about'"></app-about>
+        </div>
+    </div>
+</div>
