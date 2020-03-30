@@ -13,7 +13,7 @@ In the empty repository, create a new angular project, put the project in the sa
 git checkout dev
 ng new <project-name> --directory ./
 ```
-Update the *outputPath* in `angular.json` to something like *dist* or *docs*.
+Update the *outputPath* in `angular.json` to *dist*, you can keep any other name but put it in your gitignore file.
 
 ### Install `angular-cli-ghpages`
 ```
@@ -22,10 +22,12 @@ npm install -g angular-cli-ghpages
 Documentation: https://github.com/angular-schule/angular-cli-ghpages
 
 ### Build the project 
+Commit your project updates and changes, and push to `dev`.
+Then build your project. It will create the files to be pushed for production. 
 ```
 ng build --prod --base-href 'https://sudbasnet.github.io/'
-```
-Commit the changes and push to `dev`. push the production files to `master`.
+``` 
+Push the production files to `master` using angular-cli-ghpages.
 ```
 angular-cli-ghpages -b master
 ```
