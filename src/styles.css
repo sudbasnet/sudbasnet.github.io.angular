@@ -18,6 +18,16 @@ body{
         ".  footer .";
 }
 
+.wrapper-resume {
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 720px) 1fr;
+    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-areas:
+        ".  header ."
+        ".  main   ."
+        ".  footer .";
+}
+
 .header {
     grid-area: header;
     display: grid;
@@ -31,7 +41,7 @@ body{
     height: 100%;
 }
 
-.main {
+.main, .main-resume {
     grid-area: main;
     font-family: Inconsolata;
 }

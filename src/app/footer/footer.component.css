@@ -1,9 +1,0 @@
-.footer {
-    grid-area: footer;
-}
-
-@media (max-width:450px){
-    .footer-links {
-        justify-content: center;
-    }
-}
