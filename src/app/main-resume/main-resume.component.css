@@ -33,3 +33,23 @@ ul{
 .resume-link:hover{
     color: #292b2c;
 }
+
+#btn-download{
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    border: solid;
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+    color: #868e96;
+}
+
+#btn-download:hover{
+    color: #292b2c;
+}
+
+#download{
+    display: flex;
+    justify-content: center;
+}
