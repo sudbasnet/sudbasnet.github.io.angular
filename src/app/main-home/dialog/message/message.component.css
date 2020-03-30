@@ -8,4 +8,5 @@ span{
 .dialog-box {
     padding-bottom: 20px;
     color: #E85858;
+    min-height: 70px;
 }
