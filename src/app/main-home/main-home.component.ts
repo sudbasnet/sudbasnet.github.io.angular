@@ -6,6 +6,7 @@ import { DialogService } from './dialog.service';
   selector: 'app-main-home',
   templateUrl: './main-home.component.html',
   styleUrls: ['./main-home.component.css'],
+  host: { 'class': 'main' },
   providers: [DialogService]
 })
 export class MainHomeComponent implements OnInit {

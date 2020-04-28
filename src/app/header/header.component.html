@@ -1,9 +1,14 @@
 <nav class="nav">
     <ul class="nav-links">
-        <li><a [ngClass]="'nav-link  ' +  ((currentPage === 'home') ? 'active' : '')" href="#"
-                (click)="onSelectPage('home')">01.Home</a></li>
-        <li><a [ngClass]="'nav-link  ' +  ((currentPage === 'resume') ? 'active' : '')" href="#"
-                (click)="onSelectPage('resume')">02.Resume</a></li>
+        <li><a class="nav-link" routerLink='/' routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">01.Home</a></li>
+        <li><a class="nav-link" routerLink='/resume' routerLinkActive="active">02.Resume</a></li>
         <li><a class="nav-link disabled" href="/">03.Adventures</a></li>
     </ul>
 </nav>
+<!-- 
+<li><a [ngClass]="'nav-link  ' +  ((currentPage === 'home') ? 'active' : '')" href="#"
+    (click)="onSelectPage('home')">01.Home</a></li>
+<li><a [ngClass]="'nav-link  ' +  ((currentPage === 'resume') ? 'active' : '')" href="#"
+    (click)="onSelectPage('resume')">02.Resume</a></li>
+<li><a class="nav-link disabled" href="/">03.Adventures</a></li> -->

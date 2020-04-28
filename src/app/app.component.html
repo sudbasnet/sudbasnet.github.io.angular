@@ -1,7 +1,6 @@
-<div [ngClass]="(currentPage == 'home') ? 'wrapper' : ('wrapper-' + currentPage)">
+<div class="wrapper">
   <app-header class="header" [currentPage]="currentPage"></app-header>
-  <app-main-home *ngIf="currentPage === 'home'" class="main"></app-main-home>
-  <app-main-resume *ngIf="currentPage === 'resume'" class="main-resume"></app-main-resume>
+  <!-- <app-main-home class="main"></app-main-home> -->
+  <router-outlet></router-outlet>
   <app-footer class="footer"></app-footer>
 </div>
-<!-- <app-main-resume></app-main-resume> -->

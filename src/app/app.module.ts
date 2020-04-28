@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { appRoutingModule } from './app-routing';
 import { AppComponent } from './app.component';
 import { DialogComponent } from './main-home/dialog/dialog.component';
 import { MessageComponent } from './main-home/dialog/message/message.component';
@@ -30,7 +31,8 @@ import { MainResumeComponent } from './main-resume/main-resume.component';
     MainResumeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    appRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
