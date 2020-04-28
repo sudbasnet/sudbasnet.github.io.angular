@@ -22,9 +22,10 @@ body{
 .wrapper-resume {
     display: grid;
     grid-template-columns: 1fr minmax(100px, 720px) 1fr;
-    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-rows: 10vh minmax(1px, 1px) 1fr 10vh;
     grid-template-areas:
         ".  header ."
+        ". . ."  /* for the router tag */
         ".  main   ."
         ".  footer .";
 }

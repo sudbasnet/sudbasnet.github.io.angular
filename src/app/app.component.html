@@ -1,6 +1,5 @@
-<div class="wrapper">
+<div [ngClass]="'wrapper' + ((currentPage === '/resume') ? '-resume' : '') ">
   <app-header class="header" [currentPage]="currentPage"></app-header>
-  <!-- <app-main-home class="main"></app-main-home> -->
   <router-outlet></router-outlet>
   <app-footer class="footer"></app-footer>
 </div>
