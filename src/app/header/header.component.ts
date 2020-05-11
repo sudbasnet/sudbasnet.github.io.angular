@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PageSelectService } from '../page-select.service';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +7,9 @@ import { PageSelectService } from '../page-select.service';
 })
 export class HeaderComponent implements OnInit {
   @Input() currentPage;
-  constructor(private pageSelectService: PageSelectService) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  onSelectPage(page: string) {
-    this.pageSelectService.pageUpdated.emit(page);
   }
 
 }

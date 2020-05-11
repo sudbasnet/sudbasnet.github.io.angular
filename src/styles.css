@@ -8,24 +8,24 @@ body{
 }
 
 .wrapper {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr minmax(100px, 720px) 1fr;
     grid-template-rows: 10vh minmax(1px, 1px) minmax(100px, 80vh) 10vh;
     grid-template-areas:
         ".  header ."
-        ". . ."
+        ".    .    ." /* for the router tag */
         ".  main   ."
         ".  footer .";
 }
 
+/* same, except for the sub-grids in main */
 .wrapper-resume {
     display: grid;
     grid-template-columns: 1fr minmax(100px, 720px) 1fr;
     grid-template-rows: 10vh minmax(1px, 1px) 1fr 10vh;
     grid-template-areas:
         ".  header ."
-        ". . ."  /* for the router tag */
+        ".    .    ." 
         ".  main   ."
         ".  footer .";
 }
@@ -46,6 +46,10 @@ body{
 .main, .main-resume {
     grid-area: main;
     font-family: Inconsolata;
+}
+
+.main-resume {
+    padding: 10px 10px 50px 10px;
 }
 
 .footer {
@@ -112,11 +116,6 @@ a.disabled {
     align-items: center;
 }
 
-.game>img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .game {
     height: 100%;
@@ -124,6 +123,12 @@ a.disabled {
     display: flex;
     justify-content: center;
     grid-area: game;
+}
+
+.game>img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .terminal{

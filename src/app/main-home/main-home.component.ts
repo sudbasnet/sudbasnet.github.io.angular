@@ -28,7 +28,7 @@ export class MainHomeComponent implements OnInit {
 
   ngOnInit() {
     this.dialog = DIALOGS[this.currentDialogKey];
-    console.log(DIALOGS);
+    // console.log(DIALOGS);
   }
 
   onTabSelect(tab: string) {
