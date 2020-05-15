@@ -5,12 +5,13 @@
 
 body{
     background-color: #eff0f1;
+    font-family: Inconsolata;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(100px, 720px) 1fr;
-    grid-template-rows: 10vh minmax(1px, 1px) minmax(100px, 80vh) 10vh;
+    grid-template-rows: 10vh 1px minmax(100px, 80vh) 10vh;
     grid-template-areas:
         ".  header ."
         ".    .    ." /* for the router tag */
@@ -22,7 +23,7 @@ body{
 .wrapper-resume {
     display: grid;
     grid-template-columns: 1fr minmax(100px, 720px) 1fr;
-    grid-template-rows: 10vh minmax(1px, 1px) 1fr 10vh;
+    grid-template-rows: 10vh 1px 1fr 10vh;
     grid-template-areas:
         ".  header ."
         ".    .    ." 
@@ -33,7 +34,7 @@ body{
 .header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 1fr minmax(min-content, 520px) 1fr;
+    grid-template-columns: 1fr minmax(300px, 520px) 1fr;
     grid-template-areas: ". nav .";
     font-family: Inconsolata;
 }
@@ -103,6 +104,7 @@ a.disabled {
     opacity: 0.8;
     pointer-events: none;
     cursor: default;
+    text-decoration: line-through;
 }
 
 .main {
