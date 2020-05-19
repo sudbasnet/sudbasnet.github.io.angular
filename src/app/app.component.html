@@ -1,4 +1,4 @@
-<div [ngClass]="'wrapper' + ((currentPage === '/resume') ? '-resume' : '') ">
+<div [ngClass]="'wrapper' + '-' + currentPage">
   <app-header class="header" [currentPage]="currentPage"></app-header>
   <router-outlet></router-outlet>
   <app-footer class="footer"></app-footer>

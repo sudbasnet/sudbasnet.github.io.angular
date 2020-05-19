@@ -14,7 +14,7 @@ export class AppComponent {
 
   constructor(private router: Router) {
     router.events.subscribe(val => {
-      this.currentPage = router.url;
+      this.currentPage = router.url.substring(1);
     })
 
   }
