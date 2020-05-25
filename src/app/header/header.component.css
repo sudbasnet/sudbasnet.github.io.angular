@@ -1,0 +1,19 @@
+.wip-tooltip-container {
+    position: relative; 
+    display: inline-block;
+}
+   
+.wip-tooltip-container .wip-tooltip-text {
+    visibility: hidden;
+    background-color: None;
+    position: absolute;
+    z-index: 1;
+    width: 140px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+   }
+   
+   .wip-tooltip-container:hover .wip-tooltip-text {
+    visibility: visible;
+   }
