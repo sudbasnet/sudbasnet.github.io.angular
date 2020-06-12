@@ -11,7 +11,7 @@ body{
 .wrapper {
     display: grid;
     grid-template-columns: 1fr minmax(100px, 720px) 1fr;
-    grid-template-rows: 10vh 1px minmax(100px, 80vh) 10vh;
+    grid-template-rows: 10vh 1px minmax(100px, 78vh) 10vh; /* doing 78vh to account for that 1px row */
     grid-template-areas:
         ".  header ."
         ".    .    ." /* for the router tag */
