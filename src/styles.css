@@ -15,7 +15,7 @@ body{
     grid-template-areas:
         ".  header ."
         ".    .    ." /* for the router tag */
-        ".  main   ."
+        "main  main   main"
         ".  footer .";
 }
 
@@ -110,10 +110,9 @@ a.disabled {
 .main {
     display: grid;
     grid-template-rows: minmax(100px, 300px) minmax(min-content, 40vh);
-    grid-template-columns: 1fr minmax(min-content, 520px) 1fr;
     grid-template-areas:        
-    "game game game"
-    ". terminal .";
+    "game"
+    "terminal-section";
     justify-items: center;
     align-items: center;
 }
@@ -133,9 +132,15 @@ a.disabled {
     object-fit: cover;
 }
 
+.terminal-section {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 520px) 1fr;
+    grid-template-areas: ". terminal .";
+    background-color: #232323;
+}
+
 .terminal{
     grid-area: terminal;
-    background-color: #232323;
     border-radius: 4px;
     padding: 10px;
     width: 90%;
