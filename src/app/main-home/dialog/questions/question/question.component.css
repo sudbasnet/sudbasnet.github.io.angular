@@ -6,9 +6,9 @@ button:hover {
     text-decoration: none;
     white-space: normal;
     text-align: left;
-    color: #F7ECC8;
+    color: #439EBB;
     text-decoration: none;
-    background-color: #4a90e2;
+    background-color: #F7ECC8;
     border-radius: 0%;
     /* font-weight: 700; */
     font-family: Inconsolata;
@@ -21,7 +21,7 @@ button {
     line-height: 100%;
     padding: 0px;
     margin: 0px;
-    color: #F7ECC8; /*#F1C54E;*/
+    color: #439EBB; /*#F1C54E;*/
     text-decoration: none;
     white-space: normal;
     text-align: left;

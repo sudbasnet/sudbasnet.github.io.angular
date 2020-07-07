@@ -133,14 +133,16 @@ a.disabled {
 }
 
 .terminal-section {
-    display: grid;
-    grid-template-columns: 1fr minmax(min-content, 520px) 1fr;
-    grid-template-areas: ". terminal .";
     background-color: #232323;
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 450px) 1fr;
+    grid-template-areas: ". terminal-content .";
+    height: 100%;
+    width: 100%;
 }
 
-.terminal{
-    grid-area: terminal;
+.terminal-content{
+    grid-area: terminal-content;
     border-radius: 4px;
     padding: 10px;
     width: 90%;

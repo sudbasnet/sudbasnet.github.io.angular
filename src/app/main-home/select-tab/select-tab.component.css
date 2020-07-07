@@ -6,7 +6,8 @@
 }
 
 .tab-bar-links{
-    justify-content: start;
+    justify-content: center;
+    align-content: center;
     flex-wrap: nowrap;
 }
 
